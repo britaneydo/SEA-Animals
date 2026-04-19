@@ -26,7 +26,7 @@
 // print out all data; making sure dataset is imported properly!!
 console.log(AnimalDataset);
 
-// array of all Animal Names
+// array of all animal details (initialized empty)
 let AnimalNames = [];
 let AnimalHeight = [];
 let AnimalWeight = [];
@@ -38,30 +38,28 @@ let AnimalCountries = [];
 let AnimalConservation = [];
 let AnimalFamily = [];
 
-// add all animal names into an array
-AnimalDataset.forEach((animal => AnimalNames.push(animal.Animal)));
-AnimalDataset.forEach((animal => AnimalHeight.push(animal["Height (cm)"])));
-AnimalDataset.forEach((animal => AnimalWeight.push(animal["Weight (kg)"])));
-AnimalDataset.forEach((animal => AnimalColor.push(animal.Color)));
-AnimalDataset.forEach((animal => AnimalLifespan.push(animal["Lifespan (years)"])));
-AnimalDataset.forEach((animal => AnimalDiet.push(animal.Diet)));
-AnimalDataset.forEach((animal => AnimalHabitat.push(animal.Habitat)));
-AnimalDataset.forEach((animal => AnimalCountries.push(animal["Countries Found"])));
-AnimalDataset.forEach((animal => AnimalConservation.push(animal["Conservation Status"])));
-AnimalDataset.forEach((animal => AnimalFamily.push(animal.Family)));
+// add all animal details into respective arrays
+// .forEach will go through entire dataset
+AnimalDataset.forEach((animal => {
+  AnimalNames.push(animal.Animal);
+  AnimalHeight.push(animal["Height (cm)"]);
+  AnimalColor.push(animal.Color);
+  AnimalLifespan.push(animal["Lifespan (years)"]);
+  AnimalDiet.push(animal.Diet);
+  AnimalHabitat.push(animal.Habitat);
+  AnimalCountries.push(animal["Countries Found"]);
+  AnimalConservation.push(animal["Conservation Status"]);
+  AnimalFamily.push(animal.Family);
+  }));
 
-// printing out all animal names onto console
-console.log(AnimalNames);
-console.log(AnimalHeight);
-console.log(AnimalWeight);
-console.log(AnimalColor);
-console.log(AnimalLifespan);
-console.log(AnimalDiet);
-console.log(AnimalHabitat);
-console.log(AnimalCountries);
-console.log(AnimalConservation);
-console.log(AnimalFamily);
-
+// all animal images
+var animalImages = {
+  Herbivore: "honda.png",
+  Carnivore: "carnivore.jpg",
+  Omnivore: "omnivore.jpg",
+  Insectivore: "insectivore.jpg",
+  Error: "error.jpg"
+};
 
 // show card of animal
 function showCards()
@@ -71,66 +69,18 @@ function showCards()
   cardContainer.innerHTML = "";
   const templateCard = document.querySelector(".card");
 
-  for (let i = 0; i < AnimalNames.length; i++)
-  {
-    // keep updating names so that we can continuously print out the next animal's name
-    let name = AnimalNames[i]
-
-    // add images!! (REMEMBER TO ADD!!)
+  // loop thru entire list so we can print every animal + details
+  // multiple lines, so we need {}
+  AnimalDataset.forEach(animal => {
+    let image = animalImages[animal.Diet];
+    let name = animal.Animal;
 
     // more formatting/styling
     const nextCard = templateCard.cloneNode(true); // Copy the template card
-    editCardContent(nextCard, title, imageURL); // Edit title and image
+    editCardContent(nextCard, name, image); // Edit title and image
     cardContainer.appendChild(nextCard); // Add new card to the container
-  }
-}
+  });
 
-
-
-
-
-
-
-const FRESH_PRINCE_URL =
-  "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg";
-const CURB_POSTER_URL =
-  "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg";
-const EAST_LOS_HIGH_POSTER_URL =
-  "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
-
-// This is an array of strings (TV show titles)
-let titles = [
-  "Fresh Prince of Bel Air",
-  "Curb Your Enthusiasm",
-  "East Los High"
-];
-// Your final submission should have much more data than this, and
-// you should use more than just an array of strings to store it all.
-
-// This function adds cards the page to display the data in the array
-function showCards() {
-  const cardContainer = document.getElementById("card-container");
-  cardContainer.innerHTML = "";
-  const templateCard = document.querySelector(".card");
-
-  // for (let i = 0; i < titles.length; i++) {
-  //   let title = titles[i];
-
-  //   // This part of the code doesn't scale very well! After you add your
-  //   // own data, you'll need to do something totally different here.
-  //   let imageURL = "";
-  //   if (i == 0) {
-  //     imageURL = FRESH_PRINCE_URL;
-  //   } else if (i == 1) {
-  //     imageURL = CURB_POSTER_URL;
-  //   } else if (i == 2) {
-  //     imageURL = EAST_LOS_HIGH_POSTER_URL;
-  //   }
-
-  //   const nextCard = templateCard.cloneNode(true); // Copy the template card
-  //   editCardContent(nextCard, title, imageURL); // Edit title and image
-  //   cardContainer.appendChild(nextCard); // Add new card to the container
-  // }
 }
 
 function editCardContent(card, newTitle, newImageURL) {

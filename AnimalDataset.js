@@ -518,20 +518,6 @@ const AnimalDataset = [
     "Social Structure": "Solitary"
   },
   {
-    "Animal": "Goblin Shark",
-    "Height (cm)": "Up to 366",
-    "Weight (kg)": "Up to 210",
-    "Color": "Pinkish-gray",
-    "Lifespan (years)": "30-35",
-    "Diet": "Carnivore",
-    "Habitat": "Deep-sea",
-    "Predators": "Not Applicable",
-    "Countries Found": "Worldwide",
-    "Conservation Status": "Data Deficient",
-    "Family": "Mitsukurinidae",
-    "Social Structure": "Solitary"
-  },
-  {
     "Animal": "Great White Shark",
     "Height (cm)": "Up to 610",
     "Weight (kg)": "Up to 2268",
@@ -728,20 +714,6 @@ const AnimalDataset = [
     "Social Structure": "Group-based"
   },
   {
-    "Animal": "Lemur",
-    "Height (cm)": "30-65",
-    "Weight (kg)": "0.6-4.5",
-    "Color": "Varies",
-    "Lifespan (years)": "15-25",
-    "Diet": "Herbivore",
-    "Habitat": "Forests",
-    "Predators": "Fossa",
-    "Countries Found": "Madagascar",
-    "Conservation Status": "Critically Endangered",
-    "Family": "Lemuridae",
-    "Social Structure": "Group-based"
-  },
-  {
     "Animal": "Lyrebird",
     "Height (cm)": "80-100",
     "Weight (kg)": "0.9-1.2",
@@ -750,20 +722,6 @@ const AnimalDataset = [
     "Diet": "Omnivore",
     "Habitat": "Rainforests",
     "Predators": "Birds of Prey, Dingoes",
-    "Countries Found": "Australia",
-    "Conservation Status": "Least Concern",
-    "Family": "Menuridae",
-    "Social Structure": "Solitary"
-  },
-  {
-    "Animal": "Lyrebird",
-    "Height (cm)": "77-100",
-    "Weight (kg)": "0.85-1.1",
-    "Color": "Brown, Grey",
-    "Lifespan (years)": "Up to 20",
-    "Diet": "Omnivore",
-    "Habitat": "Forests",
-    "Predators": "Birds of Prey",
     "Countries Found": "Australia",
     "Conservation Status": "Least Concern",
     "Family": "Menuridae",
@@ -876,20 +834,6 @@ const AnimalDataset = [
     "Diet": "Herbivore",
     "Habitat": "Central Africa",
     "Predators": "Leopards, Lions",
-    "Countries Found": "Democratic Republic of Congo",
-    "Conservation Status": "Endangered",
-    "Family": "Giraffidae",
-    "Social Structure": "Solitary"
-  },
-  {
-    "Animal": "Okapi",
-    "Height (cm)": "200-250",
-    "Weight (kg)": "200-350",
-    "Color": "Dark Brown, White",
-    "Lifespan (years)": "20-30",
-    "Diet": "Herbivore",
-    "Habitat": "Rainforests",
-    "Predators": "Leopards, Humans",
     "Countries Found": "Democratic Republic of Congo",
     "Conservation Status": "Endangered",
     "Family": "Giraffidae",
