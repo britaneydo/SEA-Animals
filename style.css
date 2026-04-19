@@ -4,6 +4,7 @@ body {
   padding: 0;
   overflow-x: hidden; /* prevents horizontal scrolling */
   box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 *, *::before, *::after {
@@ -19,7 +20,7 @@ body {
   text-align: center;
   margin: 0;
   font-size: 6em; /* slightly reduced to prevent overflow on small screens */
-  font-family: "Helvetica";
+  font-family: "Trebuchet MS";
   font-weight: normal;
   color: white;
 }
@@ -82,3 +83,61 @@ button {
   cursor: pointer;
   margin: 5px;
 }
+
+.card-content ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card-content li1,
+.card-content li2,
+.card-content li3,
+.card-content li4,
+.card-content li5 {
+  display: block;      /* forces new line */
+  margin-bottom: 6px;  /* spacing between fields */
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.dropdown select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  color: white;
+
+  padding: 10px 40px 10px 16px;
+  font-size: 16px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+  outline: none;
+
+  background: grey;
+
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, right 12px center;
+  background-size: cover, 18px;
+}
+
+.dropdown select:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+.dropdown select:active {
+  transform: translateY(0px);
+}
+

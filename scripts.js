@@ -113,7 +113,7 @@ function editCardContent(card, newTitle, newImageURL, Animalheight, Animalweight
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards(totalAnimals));
 
-function Filter() {
+function alphabetSort() {
   console.log("Button Clicked!");
 }
 

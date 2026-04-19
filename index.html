@@ -11,12 +11,17 @@
       <h1 class="title">Animals</h1>
     </header>
     <div class="dropdown">
-        <select id="change_chart">
+      <select id="change_chart">
+        <option value="" disabled selected>Filter</option>
         <option value="1">Herbivores</option>
         <option value="2">Carnivores</option>
         <option value="3">Omnivores</option>
         <option value="4">Insectivores</option>
-        </select>
+      </select>
+    </div>
+    <div class="footer">
+      <button onclick="alphabetSort()">Sort Alphabetically</button>
+      <button onclick="removeLastCard()">Remove A Card</button>
     </div>
     <div id="card-container"></div>
     <div class="card" style="display: none">
@@ -31,10 +36,6 @@
           <li5></li5>
         </ul>
       </div>
-    </div>
-    <div class="footer">
-      <button onclick="quoteAlert()">Filter!</button>
-      <button onclick="removeLastCard()">Remove A Card!</button>
     </div>
 
     <!-- adding 2 files since dataset file is large -->
