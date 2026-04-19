@@ -28,12 +28,40 @@ console.log(AnimalDataset);
 
 // array of all Animal Names
 let AnimalNames = [];
+let AnimalHeight = [];
+let AnimalWeight = [];
+let AnimalColor = [];
+let AnimalLifespan = [];
+let AnimalDiet = [];
+let AnimalHabitat = [];
+let AnimalCountries = [];
+let AnimalConservation = [];
+let AnimalFamily = [];
 
 // add all animal names into an array
 AnimalDataset.forEach((animal => AnimalNames.push(animal.Animal)));
+AnimalDataset.forEach((animal => AnimalHeight.push(animal["Height (cm)"])));
+AnimalDataset.forEach((animal => AnimalWeight.push(animal["Weight (kg)"])));
+AnimalDataset.forEach((animal => AnimalColor.push(animal.Color)));
+AnimalDataset.forEach((animal => AnimalLifespan.push(animal["Lifespan (years)"])));
+AnimalDataset.forEach((animal => AnimalDiet.push(animal.Diet)));
+AnimalDataset.forEach((animal => AnimalHabitat.push(animal.Habitat)));
+AnimalDataset.forEach((animal => AnimalCountries.push(animal["Countries Found"])));
+AnimalDataset.forEach((animal => AnimalConservation.push(animal["Conservation Status"])));
+AnimalDataset.forEach((animal => AnimalFamily.push(animal.Family)));
 
 // printing out all animal names onto console
 console.log(AnimalNames);
+console.log(AnimalHeight);
+console.log(AnimalWeight);
+console.log(AnimalColor);
+console.log(AnimalLifespan);
+console.log(AnimalDiet);
+console.log(AnimalHabitat);
+console.log(AnimalCountries);
+console.log(AnimalConservation);
+console.log(AnimalFamily);
+
 
 // show card of animal
 function showCards()
