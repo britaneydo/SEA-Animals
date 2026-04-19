@@ -23,34 +23,25 @@
  *
  */
 
+/* ALL SOURCES:
+
+https://www.w3schools.com/jsref/met_console_log.asp
+https://www.w3schools.com/js/js_array_iteration.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects
+https://stackoverflow.com/questions/58404118/how-do-i-store-images-in-an-array-for-javascript
+https://www.w3schools.com/jsref/jsref_foreach.asp
+https://stackoverflow.com/questions/9329446/loop-for-each-over-an-array-in-javascript
+
+*/
+
+
 // print out all data; making sure dataset is imported properly!!
 console.log(AnimalDataset);
 
-// array of all animal details (initialized empty)
-let AnimalNames = [];
-let AnimalHeight = [];
-let AnimalWeight = [];
-let AnimalColor = [];
-let AnimalLifespan = [];
-let AnimalDiet = [];
-let AnimalHabitat = [];
-let AnimalCountries = [];
-let AnimalConservation = [];
-let AnimalFamily = [];
-
-// add all animal details into respective arrays
-// .forEach will go through entire dataset
-AnimalDataset.forEach((animal => {
-  AnimalNames.push(animal.Animal);
-  AnimalHeight.push(animal["Height (cm)"]);
-  AnimalColor.push(animal.Color);
-  AnimalLifespan.push(animal["Lifespan (years)"]);
-  AnimalDiet.push(animal.Diet);
-  AnimalHabitat.push(animal.Habitat);
-  AnimalCountries.push(animal["Countries Found"]);
-  AnimalConservation.push(animal["Conservation Status"]);
-  AnimalFamily.push(animal.Family);
-  }));
+// array of all animals
+let totalAnimals = [];
 
 // all animal images
 var animalImages = {
@@ -69,21 +60,28 @@ function showCards()
   cardContainer.innerHTML = "";
   const templateCard = document.querySelector(".card");
 
-  // loop thru entire list so we can print every animal + details
-  // multiple lines, so we need {}
-  AnimalDataset.forEach(animal => {
-    let image = animalImages[animal.Diet];
-    let name = animal.Animal;
+  // add all animals into an array (so we can actually edit list to remove cards if needed)
+  AnimalDataset.forEach(animal => totalAnimals.push(animal));
+
+  for (let i = 0; i < totalAnimals.length; i++)
+  {
+    let image = animalImages[totalAnimals[i].Diet];
+    let name = totalAnimals[i].Animal;
+    let height = totalAnimals[i]["Height (cm)"];
+    let weight = totalAnimals[i]["Weight (kg)"];
+    let color = totalAnimals[i].Color;
+    let lifespan = totalAnimals[i]["Lifespan (years)"];
+    let diet = totalAnimals[i].Diet;
 
     // more formatting/styling
     const nextCard = templateCard.cloneNode(true); // Copy the template card
-    editCardContent(nextCard, name, image); // Edit title and image
+    editCardContent(nextCard, name, image, height, weight, color, lifespan, diet); // Edit title and image
     cardContainer.appendChild(nextCard); // Add new card to the container
-  });
+  }
 
 }
 
-function editCardContent(card, newTitle, newImageURL) {
+function editCardContent(card, newTitle, newImageURL, Animalheight, Animalweight, Animalcolor, Animallifespan, AnimalDiet) {
   card.style.display = "block";
 
   const cardHeader = card.querySelector("h2");
@@ -93,9 +91,17 @@ function editCardContent(card, newTitle, newImageURL) {
   cardImage.src = newImageURL;
   cardImage.alt = newTitle + " Poster";
 
-  // You can use console.log to help you debug!
-  // View the output by right clicking on your website,
-  // select "Inspect", then click on the "Console" tab
+  const cardHeight = card.querySelector("li1");
+  cardHeight.textContent = "Height (cm): " + Animalheight;
+  const cardWeight = card.querySelector("li2");
+  cardWeight.textContent = "Weight (kg): " + Animalweight;
+  const cardColor = card.querySelector("li3");
+  cardColor.textContent = "Color: " + Animalcolor;
+  const cardLifespan = card.querySelector("li4");
+  cardLifespan.textContent = "Lifespan (Years): " + Animallifespan;
+  const cardDiet = card.querySelector("li5");
+  cardDiet.textContent = "Diet: " + AnimalDiet;
+  
   console.log("new card:", newTitle, "- html: ", card);
 }
 
@@ -110,6 +116,6 @@ function quoteAlert() {
 }
 
 function removeLastCard() {
-  titles.pop(); // Remove last item in titles array
+  totalAnimals.pop(); // Remove last item in titles array
   showCards(); // Call showCards again to refresh
 }
