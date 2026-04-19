@@ -4,15 +4,20 @@
     <title>LA TV Shows | Home</title>
     <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
     <link rel="stylesheet" href="style.css" />
-    <!-- adding 2 files since dataset file is large -->
-    <script type="text/javascript" src="AnimalDataset.js"></script>
-    <script type="text/javascript" src="scripts.js"></script>
   </head>
 
   <body>
     <header class="main-header">
-      <h1 class="title">LA TV Shows</h1>
+      <h1 class="title">Animals</h1>
     </header>
+    <div class="dropdown">
+        <select id="change_chart">
+        <option value="1">Herbivores</option>
+        <option value="2">Carnivores</option>
+        <option value="3">Omnivores</option>
+        <option value="4">Insectivores</option>
+        </select>
+    </div>
     <div id="card-container"></div>
     <div class="card" style="display: none">
       <div class="card-content">
@@ -28,8 +33,12 @@
       </div>
     </div>
     <div class="footer">
-      <button onclick="quoteAlert()">Get A Quote!</button>
+      <button onclick="quoteAlert()">Filter!</button>
       <button onclick="removeLastCard()">Remove A Card!</button>
     </div>
+
+    <!-- adding 2 files since dataset file is large -->
+    <script type="text/javascript" src="AnimalDataset.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
   </body>
 </html>

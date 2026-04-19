@@ -33,15 +33,23 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objec
 https://stackoverflow.com/questions/58404118/how-do-i-store-images-in-an-array-for-javascript
 https://www.w3schools.com/jsref/jsref_foreach.asp
 https://stackoverflow.com/questions/9329446/loop-for-each-over-an-array-in-javascript
+https://www.w3schools.com/howto/howto_js_dropdown.asp
+https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-with-drop-down-options
+
 
 */
-
 
 // print out all data; making sure dataset is imported properly!!
 console.log(AnimalDataset);
 
 // array of all animals
 let totalAnimals = [];
+
+// add all animals into an array (so we can actually edit list to remove cards if needed)
+AnimalDataset.forEach(animal => totalAnimals.push(animal));
+
+// create copy for filtering
+let filteredArray = [];
 
 // all animal images
 var animalImages = {
@@ -53,25 +61,22 @@ var animalImages = {
 };
 
 // show card of animal
-function showCards()
+function showCards(array)
 {
   // formatting/styling (REMEMBER TO CHANGE!!)
   const cardContainer = document.getElementById("card-container");
   cardContainer.innerHTML = "";
   const templateCard = document.querySelector(".card");
 
-  // add all animals into an array (so we can actually edit list to remove cards if needed)
-  AnimalDataset.forEach(animal => totalAnimals.push(animal));
-
-  for (let i = 0; i < totalAnimals.length; i++)
+  for (let i = 0; i < array.length; i++)
   {
-    let image = animalImages[totalAnimals[i].Diet];
-    let name = totalAnimals[i].Animal;
-    let height = totalAnimals[i]["Height (cm)"];
-    let weight = totalAnimals[i]["Weight (kg)"];
-    let color = totalAnimals[i].Color;
-    let lifespan = totalAnimals[i]["Lifespan (years)"];
-    let diet = totalAnimals[i].Diet;
+    let image = animalImages[array[i].Diet];
+    let name = array[i].Animal;
+    let height = array[i]["Height (cm)"];
+    let weight = array[i]["Weight (kg)"];
+    let color = array[i].Color;
+    let lifespan = array[i]["Lifespan (years)"];
+    let diet = array[i].Diet;
 
     // more formatting/styling
     const nextCard = templateCard.cloneNode(true); // Copy the template card
@@ -101,21 +106,68 @@ function editCardContent(card, newTitle, newImageURL, Animalheight, Animalweight
   cardLifespan.textContent = "Lifespan (Years): " + Animallifespan;
   const cardDiet = card.querySelector("li5");
   cardDiet.textContent = "Diet: " + AnimalDiet;
-  
+
   console.log("new card:", newTitle, "- html: ", card);
 }
 
 // This calls the addCards() function when the page is first loaded
-document.addEventListener("DOMContentLoaded", showCards);
+document.addEventListener("DOMContentLoaded", showCards(totalAnimals));
 
-function quoteAlert() {
+function Filter() {
   console.log("Button Clicked!");
-  alert(
-    "I guess I can kiss heaven goodbye, because it got to be a sin to look this good!",
-  );
 }
 
 function removeLastCard() {
-  totalAnimals.pop(); // Remove last item in titles array
-  showCards(); // Call showCards again to refresh
+  totalAnimals.pop(); // Remove last item in totalAnimals array
+  showCards(totalAnimals); // Call showCards again to refresh
+}
+
+var menu = document.getElementById("change_chart");
+menu.addEventListener("change", generateData);
+
+function generateData(event) {
+  if (menu.value == '1') 
+  {
+    for (let i = 0; i < totalAnimals.length; i++)
+    {
+      if (totalAnimals[i].Diet == "Herbivore")
+      {
+        filteredArray.push(totalAnimals[i]);
+        showCards(filteredArray);
+      }
+    }
+  } else if (menu.value == '2') 
+  {
+    for (let i = 0; i < totalAnimals.length; i++)
+    {
+      if (totalAnimals[i].Diet == "Carnivore")
+      {
+        filteredArray.push(totalAnimals[i]);
+        showCards(filteredArray);
+      }
+    }
+  } else if (menu.value == '3') 
+  {
+    for (let i = 0; i < totalAnimals.length; i++)
+    {
+      if (totalAnimals[i].Diet == "Omnivore")
+      {
+        filteredArray.push(totalAnimals[i]);
+        showCards(filteredArray);
+      }
+    }
+  }
+  else if (menu.value == '4')
+  {
+    for (let i = 0; i < totalAnimals.length; i++)
+    {
+      if (totalAnimals[i].Diet == "Insectivore")
+      {
+        filteredArray.push(totalAnimals[i]);
+        showCards(filteredArray);
+      }
+    }
+  }
+
+
 }
