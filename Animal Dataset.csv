@@ -1,0 +1,96 @@
+Animal,Height (cm),Weight (kg),Color,Lifespan (years),Diet,Habitat,Predators,Countries Found,Conservation Status,Family,Social Structure
+Aardvark,105-130,40-65,Grey,20-30,Insectivore,"Savannas, Grasslands","Lions, Hyenas",Africa,Least Concern,Orycteropodidae,Solitary
+African Elephant,270-310,2700-6000,Grey,60-70,Herbivore,"Savannah, Forest","Lions, Hyenas",Africa,Vulnerable,Elephantidae,Herd-based
+Alpine Ibex,67-101,19-120,Brown,15-20,Herbivore,"Mountains, Alpine","Wolves, Golden Eagles",European Alps,Least Concern,Bovidae,Group-based
+American Bison,152-186,"318-1,000",Brown,15-20,Herbivore,"Grasslands, Plains","Wolves, Grizzly Bears",North America,Near Threatened,Bovidae,Group-based
+Anteater,52-91,22-41,"Brown, White",15-20,Insectivore,"Grasslands, Forests","Jaguars, Pumas",Central and South America,Least Concern,Myrmecophagidae,Solitary
+Arabian Horse,140-160,380-1000,Various,25-30,Herbivore,"Middle East, North Africa","Humans, Predators","Middle East, North Africa",Not Applicable,Equidae,Herd-based
+Asian Elephant,200-300,2000-5000,Grey,60-80,Herbivore,"Grasslands, Forests","Tigers, Leopards",Asia (Southeast),Endangered,Elephantidae,Herd-based
+Atlantic Spotted Dolphin,200-250,120-140,"Gray, White",20-25,Carnivore,"Oceans, Coastal Areas","Sharks, Orcas",Worldwide,Least Concern,Delphinidae,Group-based
+Australian Fur Seal,112-160,18-40,"Brown, Gray",14-17,Carnivore,Coastal Waters,"Sharks, Orcas","Australia, New Zealand",Least Concern,Otariidae,Group-based
+Baird's Tapir,76-107,150-400,"Brown, Black",25-30,Herbivore,"Rainforests, Grasslands","Jaguars, Crocodiles",Central and South America,Endangered,Tapiridae,Solitary
+Basking Shark,Up to 1100,400-700,"Gray, Brown",20-25,Carnivore,Oceans,"Orcas, Great White Sharks",Worldwide,Vulnerable,Cetorhinidae,Solitary
+Black Rhinoceros,132-180,"800-1,400","Gray, Black",35-50,Herbivore,"Grasslands, Forests","Lions, Hyenas",Eastern and Southern Africa,Critically Endangered,Rhinocerotidae,Solitary
+Blobfish,Up to 30,Up to 10,Pinkish-gray,Up to 100,Carnivore,Deep-sea,Not Applicable,"Australia, New Zealand, Tasmania",Vulnerable,Psychrolutidae,Solitary
+Blue Morpho Butterfly,Up to 15,Up to 0.028,Blue,1-2 weeks,Herbivore,Rainforests,"Birds, Bats",Central and South America,Not Evaluated,Nymphalidae,Solitary
+Blue-Ringed Octopus,Up to 20,Up to 0.3,"Blue, Brown",6-8 months,Carnivore,"Coral Reefs, Tide Pools",Larger Fish,Indo-Pacific region,Near Threatened,Octopodidae,Solitary
+Bonobo,Up to 150,30-40,Black,40-60,Omnivore,Rainforests,"Leopards, Humans",Democratic Republic of Congo,Endangered,Hominidae,Social groups
+Bornean Orangutan,96-150,30-82,Reddish-brown,35-45,Omnivore,Rainforests,"Tigers, Humans",Borneo,Critically Endangered,Hominidae,Solitary
+Bottlenose Dolphin,200-400,150-650,Grey,20-50,Carnivore,Oceans,"Sharks, Orcas",Oceans worldwide,Least Concern,Delphinidae,Social pods
+Brown Bear,70-120,70-780,Brown,20-30,Omnivore,"Forests, Mountains","Wolves, Tigers","North America, Europe, Asia",Least Concern,Ursidae,Solitary
+Burmese Python,Up to 460,Up to 90,"Brown, Black",20-25,Carnivore,"Grasslands, Forests","Leopards, Hawksbills","Southeast Asia, South Asia, Indonesia",Least Concern,Pythonidae,Solitary
+Chimpanzee,Up to 160,26-70,Black,40-50,Omnivore,"Rainforests, Grasslands","Leopards, Humans",Central and West Africa,Endangered,Hominidae,Social groups
+Chinese Giant Salamander,Up to 180,Up to 65,Dark Brown,Up to 70,Carnivore,Freshwater,"Fish, Crustaceans",China,Critically Endangered,Cryptobranchidae,Solitary
+Coelacanth,Up to 200,Up to 90,"Brown, Grey",Up to 60,Carnivore,"Deep-sea, Caves","Sharks, Humans",Western Indian Ocean,Not Evaluated,Latimeriidae,Solitary
+Common Dolphin,200-250,100-135,"Gray, Yellow",20-25,Carnivore,"Oceans, Coastal Areas","Sharks, Orcas",Worldwide,Least Concern,Delphinidae,Group-based
+Common Snapping Turtle,20-36,4.5-16,"Brown, Gray",30-50,Omnivore,Freshwater,"Birds, Raccoons",North America,Least Concern,Chelydridae,Solitary
+Dugong,Up to 300,Up to 420,Gray,70-80,Herbivore,"Coastal Waters, Seagrass","Sharks, Orcas","Indian Ocean, Western Pacific",Vulnerable,Dugongidae,Solitary
+Eastern Gorilla,140-188,73-204,Black,40-50,Herbivore,Rainforests,"Leopards, Humans",Democratic Republic of Congo,Endangered,Hominidae,Social groups
+Echidna,30-45,2.5-6.5,"Brown, Tan",15-20,Insectivore,"Forests, Grasslands","Dingoes, Eagles","Australia, New Guinea",Least Concern,Tachyglossidae,Solitary
+Flying Fox,Up to 40,Up to 1.1,"Brown, Gray",15-23,Herbivore,Forests,Birds of Prey,"Asia, Australia",Least Concern,Pteropodidae,Group-based
+Galapagos Penguin,49-53,1.5-2.5,"Black, White",Up to 15,Carnivore,Coastal Areas,"Orcas, Sharks",Galapagos Islands,Endangered,Spheniscidae,Solitary
+Galapagos Tortoise,Up to 183,Up to 417,"Brown, Grey",100-150,Herbivore,Galapagos Islands,"Humans, Rats",Galapagos Islands,Vulnerable,Testudinidae,Solitary
+Gaur,180-300,600-1300,"Dark Brown, Black",20-25,Herbivore,"Grasslands, Forests","Tigers, Leopards","Southeast Asia, South Asia",Vulnerable,Bovidae,Herd-based
+Gharial,Up to 600,Up to 1500,Brownish-gray,40-60,Carnivore,"Rivers, Lakes","Crocodiles, Tigers",Indian subcontinent,Critically Endangered,Gavialidae,Solitary
+Giant Panda,70-90,70-125,"Black, White",20-30,Herbivore,Temperate Broadleaf Forests,Snow Leopards,China,Endangered,Ursidae,Solitary
+Gila Monster,Up to 60,Up to 2.3,"Black, Orange",Up to 20,Carnivore,"Deserts, Scrubland","Birds of Prey, Coyotes","Southwestern United States, Mexico",Least Concern,Helodermatidae,Solitary
+Glass Frog,2.2-7.7,Up to 0.03,"Green, Transparent",10-14 days,Insectivore,Rainforests,"Birds, Snakes",Central and South America,Least Concern,Centrolenidae,Solitary
+Goblin Shark,Up to 320,Up to 210,Pinkish-gray,30-35,Carnivore,Deep-sea,"Larger Fish, Other Sharks",Worldwide,Data Deficient,Mitsukurinidae,Solitary
+Goblin Shark,Up to 366,Up to 210,Pinkish-gray,30-35,Carnivore,Deep-sea,Not Applicable,Worldwide,Data Deficient,Mitsukurinidae,Solitary
+Great White Shark,Up to 610,Up to 2268,Grey,30-40,Carnivore,Oceans,Orcas,Oceans worldwide,Vulnerable,Lamnidae,Solitary
+Green Sea Turtle,Up to 120,Up to 200,Greenish-brown,80-100,Herbivore,"Oceans, Coastal Areas",Predatory Fish,Oceans worldwide,Endangered,Cheloniidae,Solitary
+Grevy's Zebra,130-160,350-450,"White, Black",20-30,Herbivore,Grasslands,"Lions, Hyenas",Eastern Africa,Endangered,Equidae,Herd-based
+Hagfish,Up to 127,Up to 0.6,Pinkish-gray,Up to 30,Carnivore,Deep-sea,Not Applicable,Worldwide,Data Deficient,Myxinidae,Solitary
+Harp Seal,Up to 180,Up to 160,"Silver, Gray",20-35,Carnivore,"Arctic, Atlantic Ocean","Polar Bears, Orcas","Arctic, Atlantic Ocean",Least Concern,Phocidae,Group-based
+Harpy Eagle,86-107,4.5-9,"Black, White",25-35,Carnivore,Rainforests,"Jaguars, Snakes",Central and South America,Near Threatened,Accipitridae,Solitary
+Hippopotamus,120-160,1300-3200,Grey,40-50,Herbivore,"Rivers, Lakes","Lions, Crocodiles",Sub-Saharan Africa,Vulnerable,Hippopotamidae,Group-based
+Humpback Whale,Up to 1700,Up to 30000,"Black, White",45-50,Omnivore,Oceans,Orcas,Worldwide,Least Concern,Balaenopteridae,Solitary
+Indri,Up to 70,Up to 6,"Black, White",15-18,Herbivore,Rainforests,"Fossa, Birds of Prey",Madagascar,Critically Endangered,Indridae,Solitary
+King Cobra,Up to 550,Up to 9,Olive-green,20-30,Carnivore,"Grasslands, Forests","Birds, Snakes","Southeast Asia, South Asia",Vulnerable,Elapidae,Solitary
+Kiwi,25-46,1.0-3.3,Brown,25-50,Omnivore,Forests,"Stoats, Cats",New Zealand,Vulnerable,Apterygidae,Solitary
+Komodo Dragon,Up to 300,Up to 90,Grey,20-30,Carnivore,"Islands, Grasslands","Humans, Larger Predators",Indonesia,Vulnerable,Varanidae,Solitary
+Leafy Sea Dragon,Up to 35,Up to 0.5,"Brown, Green",Up to 10,Carnivore,Seaweed Beds,"Fish, Octopuses",Southern Australia,Near Threatened,Syngnathidae,Solitary
+Lemur,30-50,0.6-3.5,Various,15-25,Omnivore,"Rainforests, Madagascar","Fossa, Hawks",Madagascar,Vulnerable,Lemuridae,Group-based
+Lemur,30-65,0.6-4.5,Varies,15-25,Herbivore,Forests,Fossa,Madagascar,Critically Endangered,Lemuridae,Group-based
+Lyrebird,80-100,0.9-1.2,"Brown, Black",15-20,Omnivore,Rainforests,"Birds of Prey, Dingoes",Australia,Least Concern,Menuridae,Solitary
+Lyrebird,77-100,0.85-1.1,"Brown, Grey",Up to 20,Omnivore,Forests,Birds of Prey,Australia,Least Concern,Menuridae,Solitary
+Manatee,300-400,400-590,"Gray, Brown",40-60,Herbivore,"Rivers, Coastal Areas","Alligators, Sharks","North, Central, and South America",Vulnerable,Trichechidae,Solitary
+Mandrill,Up to 75,Up to 55,"Brown, Green",20-40,Omnivore,Rainforests,"Leopards, Humans",Central Africa,Vulnerable,Cercopithecidae,Social groups
+Mantis Shrimp,Up to 30,Up to 2.7,Various,Up to 20,Carnivore,Coral Reefs,Larger Fish,Oceans worldwide,Not Evaluated,Stomatopoda,Solitary
+Mountain Gorilla,120-200,70-200,"Black, Brown",35-40,Herbivore,"Rainforests, Mountains","Leopards, Humans","Democratic Republic of Congo, Uganda",Endangered,Hominidae,Group-based
+Narwhal,Up to 500,Up to 1600,"Gray, Mottled White",50-60,Carnivore,Arctic Waters,"Polar Bears, Orcas",Arctic,Near Threatened,Monodontidae,Solitary
+Nudibranch,Up to 30,Up to 1,Various,Up to 10,Carnivore,"Oceans, Coral Reefs","Sea Anemones, Predatory Fish",Oceans worldwide,Not Evaluated,Nudibranchia,Solitary
+Numbat,35-45,0.32-1,"Red, White",Up to 5,Insectivore,Eucalyptus Forests,"Foxes, Cats",Western Australia,Endangered,Myrmecobiidae,Solitary
+Okapi,200-250,200-350,"Brown, White",20-30,Herbivore,Central Africa,"Leopards, Lions",Democratic Republic of Congo,Endangered,Giraffidae,Solitary
+Okapi,200-250,200-350,"Dark Brown, White",20-30,Herbivore,Rainforests,"Leopards, Humans",Democratic Republic of Congo,Endangered,Giraffidae,Solitary
+Orangutan,Up to 160,30-82,Reddish-brown,30-45,Omnivore,Rainforests,"Tigers, Humans","Indonesia, Malaysia",Critically Endangered,Hominidae,Solitary
+Peacock Mantis Shrimp,Up to 18,Up to 0.4,Various,Up to 20,Carnivore,Coral Reefs,"Fish, Crustaceans",Indo-Pacific region,Not Evaluated,Gonodactylidae,Solitary
+Polar Bear,Up to 160,Up to 700,White,25-30,Carnivore,Arctic,Orcas,Arctic,Vulnerable,Ursidae,Solitary
+Proboscis Monkey,45-75,14-24,"Orange, Brown",Up to 15,Herbivore,"Mangroves, Rainforests",Clouded Leopards,"Borneo, Malaysia",Endangered,Cercopithecidae,Social groups
+Red Kangaroo,140-180,18-95,"Brown, Red",Up to 23,Herbivore,Grasslands,"Dingoes, Eagles",Australia,Least Concern,Macropodidae,Group-based
+Red-Eyed Tree Frog,5.1-7.5,Up to 0.1,"Green, Red",Up to 5,Insectivore,Rainforests,"Snakes, Birds",Central America,Least Concern,Hylidae,Solitary
+Saola,Up to 90,Up to 100,"Brown, White",Up to 21,Herbivore,Forests,"Tigers, Leopards","Vietnam, Laos",Critically Endangered,Bovidae,Solitary
+Shortfin Mako Shark,Up to 394,Up to 800,Metallic Blue,28-35,Carnivore,Oceans,Larger Sharks,Worldwide,Vulnerable,Lamnidae,Solitary
+Slow Loris,20-38,0.3-1.6,Yellowish-Brown,20-24,Omnivore,Forests,"Birds, Snakes",Southeast Asia,Vulnerable,Lorisidae,Solitary
+Sperm Whale,Up to 2056,Up to 57000,Gray,50-60,Carnivore,Oceans,Orcas,Worldwide,Vulnerable,Physeteridae,Solitary
+Squirrel Monkey,25-35,0.5-1,"Yellowish-Orange, Black",Up to 20,Omnivore,Rainforests,"Snakes, Hawks",Central and South America,Least Concern,Cebidae,Group-based
+Sumatran Orangutan,66-100,23-56,Reddish-Brown,30-50,Omnivore,Rainforests,"Tigers, Humans",Sumatra,Critically Endangered,Hominidae,Solitary
+Sumatran Rhino,100-145,750-950,Reddish-Brown,30-45,Herbivore,Rainforests,"Tigers, Humans",Southeast Asia,Critically Endangered,Rhinocerotidae,Solitary
+Sumatran Rhinoceros,112-145,500-950,Brown,35-40,Herbivore,Rainforests,"Tigers, Humans",Southeast Asia,Critically Endangered,Rhinocerotidae,Solitary
+Sumatran Tiger,70-87,47-121,"Orange, Black Stripes",15-20,Carnivore,Rainforests,"Leopards, Humans",Sumatra,Critically Endangered,Felidae,Solitary
+Sun Bear,120-150,27-80,Black,25-30,Omnivore,Tropical Forests,"Tigers, Leopards",Southeast Asia,Vulnerable,Ursidae,Solitary
+Tapir,70-120,150-400,"Brown, Black",25-30,Herbivore,"Rainforests, Grasslands","Jaguars, Crocodiles",South and Central America,Vulnerable,Tapiridae,Solitary
+Tsetse Fly,Up to 0.7,Up to 0.03,"Brown, Gray",Up to 28,Carnivore,Savannahs,Not Applicable,Africa,Not Applicable,Glossinidae,Solitary
+Tufted Puffin,35-41,0.4-1,"Black, White",Up to 20,Carnivore,Coastal Areas,"Eagles, Falcons",North Pacific,Least Concern,Alcidae,Social groups
+Vaquita,Up to 150,Up to 55,"Grey, White",20-21,Carnivore,Gulf of California,"Nets, Sharks","Gulf of California, Mexico",Critically Endangered,Phocoenidae,Solitary
+Walrus,Up to 3200,Up to 1200,Brown,40-50,Carnivore,"Arctic, Coastal Areas","Polar Bears, Orcas","Arctic, Subarctic",Least Concern,Odobenidae,Group-based
+Warthog,85-150,60-150,"Brown, Black",15-20,Omnivore,"Savannahs, Grasslands","Lions, Leopards",Sub-Saharan Africa,Least Concern,Suidae,Group-based
+Water Buffalo,200-300,300-1200,Dark Gray,20-25,Herbivore,"Grasslands, Wetlands","Tigers, Crocodiles","Asia, Africa",Least Concern,Bovidae,Group-based
+Western Gorilla,140-200,68-182,Black,30-40,Herbivore,Rainforests,"Leopards, Humans",Central Africa,Critically Endangered,Hominidae,Social groups
+Western Lowland Gorilla,140-200,68-181,Black,30-40,Herbivore,Rainforests,"Leopards, Humans",Central Africa,Critically Endangered,Hominidae,Social groups
+White Rhinoceros,1400-2300,1800-2500,Gray,40-50,Herbivore,Grasslands,"Lions, Hyenas",Eastern and Southern Africa,Near Threatened,Rhinocerotidae,Group-based
+Wildebeest,170-250,200-390,"Gray, Black",20-25,Herbivore,Grasslands,"Lions, Crocodiles",Eastern and Southern Africa,Least Concern,Bovidae,Group-based
+Yak,140-160,500-1200,"Brown, Black",20-25,Herbivore,Mountains,"Snow Leopards, Wolves","Himalayas, Central Asia",Least Concern,Bovidae,Group-based
+Yeti Crab,Up to 15,Up to 0.5,"White, Hairy",Up to 20,Omnivore,Hydrothermal Vents,Not Applicable,Pacific Ocean,Not Evaluated,Kiwaidae,Solitary
+Zebra,220-340,400-900,"Black, White",20-25,Herbivore,Grasslands,"Lions, Hyenas",Africa,Least Concern,Equidae,Group-based
+Zebra Shark,Up to 330,Up to 32,"Brown, Yellowish",25-30,Carnivore,Coral Reefs,Larger Fish,Indo-Pacific region,Endangered,Stegostomatidae,Solitary

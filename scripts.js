@@ -23,6 +23,30 @@
  *
  */
 
+// print out all data; making sure dataset is imported properly!!
+console.log(AnimalDataset);
+
+// for every animal in AnimalDataset, print it's name in the console log
+// define AnimalName array
+let AnimalNames = [];
+
+// add all animal names into an array
+AnimalDataset.forEach((animal => AnimalNames.push(animal.Animal)));
+
+console.log(AnimalNames);
+
+// show card of animal
+// function showCards()
+// {
+
+// }
+
+
+
+
+
+
+
 const FRESH_PRINCE_URL =
   "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg";
 const CURB_POSTER_URL =
@@ -34,7 +58,7 @@ const EAST_LOS_HIGH_POSTER_URL =
 let titles = [
   "Fresh Prince of Bel Air",
   "Curb Your Enthusiasm",
-  "East Los High",
+  "East Los High"
 ];
 // Your final submission should have much more data than this, and
 // you should use more than just an array of strings to store it all.
