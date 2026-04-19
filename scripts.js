@@ -136,7 +136,9 @@ function generateData(event) {
         showCards(filteredArray);
       }
     }
-  } else if (menu.value == '2') 
+    filteredArray = [];
+  } 
+  else if (menu.value == '2') 
   {
     for (let i = 0; i < totalAnimals.length; i++)
     {
@@ -146,7 +148,9 @@ function generateData(event) {
         showCards(filteredArray);
       }
     }
-  } else if (menu.value == '3') 
+    filteredArray = [];
+  } 
+  else if (menu.value == '3') 
   {
     for (let i = 0; i < totalAnimals.length; i++)
     {
@@ -156,6 +160,7 @@ function generateData(event) {
         showCards(filteredArray);
       }
     }
+    filteredArray = [];
   }
   else if (menu.value == '4')
   {
@@ -167,7 +172,7 @@ function generateData(event) {
         showCards(filteredArray);
       }
     }
+    filteredArray = [];
   }
-
 
 }

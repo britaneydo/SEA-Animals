@@ -2,6 +2,12 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* prevents horizontal scrolling */
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 .main-header {
@@ -12,24 +18,32 @@ body {
 .title {
   text-align: center;
   margin: 0;
-  font-size: 8em;
+  font-size: 6em; /* slightly reduced to prevent overflow on small screens */
   font-family: "Helvetica";
   font-weight: normal;
   color: white;
 }
 
-#card-container {
+.dropdown {
   display: flex;
   justify-content: center;
+  margin: 15px 0;
+}
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;            /* KEY FIX: allows cards to wrap */
+  justify-content: center;
+  gap: 15px;                  /* cleaner spacing than margins */
   margin: 20px;
 }
 
 .card {
   width: 300px;
+  max-width: 90vw;           /* prevents overflow on small screens */
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 5px;
 }
 
 .card-content {
@@ -51,6 +65,7 @@ body {
 .footer {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;           /* prevents overflow on small screens */
   background-color: rgba(0, 0, 0, 0.3);
   padding: 10px;
 }
@@ -59,8 +74,7 @@ button {
   text-align: center;
   background-color: #666;
   border: none;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
   height: 40px;
   border-radius: 10px;
   color: white;
