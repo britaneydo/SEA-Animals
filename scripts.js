@@ -26,20 +26,36 @@
 // print out all data; making sure dataset is imported properly!!
 console.log(AnimalDataset);
 
-// for every animal in AnimalDataset, print it's name in the console log
-// define AnimalName array
+// array of all Animal Names
 let AnimalNames = [];
 
 // add all animal names into an array
 AnimalDataset.forEach((animal => AnimalNames.push(animal.Animal)));
 
+// printing out all animal names onto console
 console.log(AnimalNames);
 
 // show card of animal
-// function showCards()
-// {
+function showCards()
+{
+  // formatting/styling (REMEMBER TO CHANGE!!)
+  const cardContainer = document.getElementById("card-container");
+  cardContainer.innerHTML = "";
+  const templateCard = document.querySelector(".card");
 
-// }
+  for (let i = 0; i < AnimalNames.length; i++)
+  {
+    // keep updating names so that we can continuously print out the next animal's name
+    let name = AnimalNames[i]
+
+    // add images!! (REMEMBER TO ADD!!)
+
+    // more formatting/styling
+    const nextCard = templateCard.cloneNode(true); // Copy the template card
+    editCardContent(nextCard, title, imageURL); // Edit title and image
+    cardContainer.appendChild(nextCard); // Add new card to the container
+  }
+}
 
 
 
@@ -69,24 +85,24 @@ function showCards() {
   cardContainer.innerHTML = "";
   const templateCard = document.querySelector(".card");
 
-  for (let i = 0; i < titles.length; i++) {
-    let title = titles[i];
+  // for (let i = 0; i < titles.length; i++) {
+  //   let title = titles[i];
 
-    // This part of the code doesn't scale very well! After you add your
-    // own data, you'll need to do something totally different here.
-    let imageURL = "";
-    if (i == 0) {
-      imageURL = FRESH_PRINCE_URL;
-    } else if (i == 1) {
-      imageURL = CURB_POSTER_URL;
-    } else if (i == 2) {
-      imageURL = EAST_LOS_HIGH_POSTER_URL;
-    }
+  //   // This part of the code doesn't scale very well! After you add your
+  //   // own data, you'll need to do something totally different here.
+  //   let imageURL = "";
+  //   if (i == 0) {
+  //     imageURL = FRESH_PRINCE_URL;
+  //   } else if (i == 1) {
+  //     imageURL = CURB_POSTER_URL;
+  //   } else if (i == 2) {
+  //     imageURL = EAST_LOS_HIGH_POSTER_URL;
+  //   }
 
-    const nextCard = templateCard.cloneNode(true); // Copy the template card
-    editCardContent(nextCard, title, imageURL); // Edit title and image
-    cardContainer.appendChild(nextCard); // Add new card to the container
-  }
+  //   const nextCard = templateCard.cloneNode(true); // Copy the template card
+  //   editCardContent(nextCard, title, imageURL); // Edit title and image
+  //   cardContainer.appendChild(nextCard); // Add new card to the container
+  // }
 }
 
 function editCardContent(card, newTitle, newImageURL) {
