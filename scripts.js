@@ -44,7 +44,7 @@ var animalImages = {
 // show card of animal
 function showCards(array)
 {
-  // formatting/styling (REMEMBER TO CHANGE!!)
+  // formatting/styling
   const cardContainer = document.getElementById("card-container");
   cardContainer.innerHTML = "";
   const templateCard = document.querySelector(".card");
@@ -77,13 +77,16 @@ function editCardContent(card, newTitle, newImageURL, Animalheight, Animalweight
   card.classList.remove("herbivore", "carnivore", "omnivore", "insectivore");
   card.classList.add(AnimalDiet.toLowerCase());
 
+  // title of card
   const cardHeader = card.querySelector("h2");
   cardHeader.textContent = newTitle;
 
+  // displays image
   const cardImage = card.querySelector("img");
   cardImage.src = newImageURL;
   cardImage.alt = newTitle + " Poster";
 
+  // displaying all details to card
   const cardHeight = card.querySelector("li1");
   cardHeight.textContent = "Height (cm): " + Animalheight;
   const cardWeight = card.querySelector("li2");
@@ -103,9 +106,12 @@ function editCardContent(card, newTitle, newImageURL, Animalheight, Animalweight
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards(totalAnimals));
 
+// for sorting
+// https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-with-drop-down-options
 var sort = document.getElementById("sort_chart");
 sort.addEventListener("change", Sort);
 
+// sort depending on user option. uses bubblesort
 function Sort(event) 
 {
   if (sort.value == '1') 
@@ -125,14 +131,17 @@ function Sort(event)
 
 }
 
+// pops last card in array then calls showCards to display all animals
 function removeLastCard() 
 {
   totalAnimals.pop(); // Remove last item in totalAnimals array
   showCards(totalAnimals); // Call showCards again to refresh
 }
 
+// adds card to end of array, calls showCards to display all animals
 function addCard()
 {
+  // error handling
   if (ExtraAnimalDataset.length == 0)
   {
     alert("There are no more animals to add!");
@@ -147,6 +156,7 @@ function addCard()
   showCards(totalAnimals);
 }
 
+// for filtering
 var menu = document.getElementById("filter_chart");
 menu.addEventListener("change", generateData);
 

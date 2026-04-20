@@ -1,3 +1,5 @@
+// changed from json file to js file
+
 const AnimalDataset = [
   {
     "Animal": "Aardvark",

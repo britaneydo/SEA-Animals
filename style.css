@@ -105,10 +105,6 @@ body {
   text-align: center;
 }
 
-.footer select:hover {
-  transform: translateY(-2px) scale(1.03);
-}
-
 button {
   text-align: center;
   background-color: #1C3144;
