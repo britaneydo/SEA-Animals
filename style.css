@@ -27,17 +27,24 @@ body {
 }
 
 .main-header {
-  background-color: #70161E;
-  padding-bottom: 10px;
+  padding: 5px 0;
+  text-align: center;
 }
 
 .title {
-  text-align: center;
-  margin: 0;
-  font-size: 6em; /* slightly reduced to prevent overflow on small screens */
+  display: inline-block;
+  padding: 20px 60px;
+  margin: 20px auto;
+
+  font-size: 5em;
   font-family: "Nirakolu", Verdana;
   font-weight: normal;
+
   color: white;
+  background-color: #70161E;
+
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .dropdown {
