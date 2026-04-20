@@ -23,7 +23,7 @@
  *
  */
 
-/* ALL SOURCES:
+/* ALL SOURCES USED:
 
 https://www.w3schools.com/jsref/met_console_log.asp
 https://www.w3schools.com/js/js_array_iteration.asp
@@ -93,6 +93,10 @@ function editCardContent(card, newTitle, newImageURL, Animalheight, Animalweight
   Animalcolor, Animallifespan, AnimalDiet, AnimalHabitat) 
 {
   card.style.display = "block";
+
+  // this is ONLY to change the colors of the cards (based on animal diet)
+  card.classList.remove("herbivore", "carnivore", "omnivore", "insectivore");
+  card.classList.add(AnimalDiet.toLowerCase());
 
   const cardHeader = card.querySelector("h2");
   cardHeader.textContent = newTitle;
@@ -220,7 +224,8 @@ function generateData(event)
 // turn weight into string
 function turnNum(anyString)
 {
-  let thisNum = anyString.match(/\d+/)
+  // regular expression to accept decimals as well
+  let thisNum = anyString.match(/\d+(\.\d+)?/);
 
   // if not a number, make weight 0 (first of list)
   if (!thisNum)
@@ -255,5 +260,7 @@ function bubbleSort(arr, type)
   }
   return arr;
 }
+
+
 
 

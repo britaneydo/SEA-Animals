@@ -952,20 +952,6 @@ const AnimalDataset = [
     "Social Structure": "Solitary"
   },
   {
-    "Animal": "Tsetse Fly",
-    "Height (cm)": "Up to 0.7",
-    "Weight (kg)": "Up to 0.03",
-    "Color": "Brown, Gray",
-    "Lifespan (years)": "Up to 28",
-    "Diet": "Carnivore",
-    "Habitat": "Savannahs",
-    "Predators": "Not Applicable",
-    "Countries Found": "Africa",
-    "Conservation Status": "Not Applicable",
-    "Family": "Glossinidae",
-    "Social Structure": "Solitary"
-  },
-  {
     "Animal": "Tufted Puffin",
     "Height (cm)": "35-41",
     "Weight (kg)": "0.4-1",
@@ -1034,20 +1020,6 @@ const AnimalDataset = [
     "Conservation Status": "Least Concern",
     "Family": "Bovidae",
     "Social Structure": "Group-based"
-  },
-  {
-    "Animal": "Western Gorilla",
-    "Height (cm)": "140-200",
-    "Weight (kg)": "68-182",
-    "Color": "Black",
-    "Lifespan (years)": "30-40",
-    "Diet": "Herbivore",
-    "Habitat": "Rainforests",
-    "Predators": "Leopards, Humans",
-    "Countries Found": "Central Africa",
-    "Conservation Status": "Critically Endangered",
-    "Family": "Hominidae",
-    "Social Structure": "Social groups"
   },
   {
     "Animal": "Western Lowland Gorilla",

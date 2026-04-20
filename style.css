@@ -58,7 +58,7 @@ body {
   width: 300px;
   max-width: 90vw;           /* prevents overflow on small screens */
   border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -70,7 +70,7 @@ body {
 
 .card-content h2 {
   margin-top: 0;
-  font-size: 25px;
+  font-size: 30px;
   color: rgba(0, 0, 0, 0.675);
 }
 
@@ -126,10 +126,13 @@ button:hover {
 .card-content li2,
 .card-content li3,
 .card-content li4,
-.card-content li5 {
+.card-content li5,
+.card-content li6 
+{
   display: block;      /* forces new line */
   margin-bottom: 6px;  /* spacing between fields */
-  font-size: 15px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.666);
 }
 
 .dropdown {
@@ -174,5 +177,21 @@ button:hover {
 
 .dropdown select:active {
   transform: translateY(0px);
+}
+
+.card.herbivore {
+  background-color: #7ea16b90;
+}
+
+.card.carnivore {
+  background-color: #70161d78;
+}
+
+.card.omnivore {
+  background-color: #1c314484;
+}
+
+.card.insectivore {
+  background-color: #596f629b;
 }
 
