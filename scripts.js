@@ -38,7 +38,7 @@ https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
 https://www.w3schools.com/jsref/jsref_match.asp
 https://www.freecodecamp.org/news/javascript-regex-match-example-how-to-use-the-js-replace-method-on-a-string/
-
+https://stackoverflow.com/questions/61739935/why-does-sorting-copied-array-sorts-original-array?utm_source=chatgpt.com
 
 */
 
@@ -122,19 +122,18 @@ function Sort(event)
 {
   if (sort.value == '1') 
   {
-    filteredArray = bubbleSort(totalAnimals, "Weight (kg)")
-    showCards(filteredArray);
+    filteredArray = bubbleSort([...totalAnimals], "Weight (kg)");
   } 
   else if (sort.value == '2') 
   {
-    filteredArray = bubbleSort(totalAnimals, "Height (cm)")
-    showCards(filteredArray);
+    filteredArray = bubbleSort([...totalAnimals], "Height (cm)");
   } 
   else if (sort.value == '3') 
   {
-    filteredArray = bubbleSort(totalAnimals, "Lifespan (years)")
-    showCards(filteredArray);
+    filteredArray = bubbleSort([...totalAnimals], "Lifespan (years)");
   }
+
+  showCards(filteredArray);
 
 }
 
@@ -154,6 +153,9 @@ menu.addEventListener("change", generateData);
 
 function generateData(event) 
 {
+
+  filteredArray = [];
+
   if (menu.value == '1') 
   {
     for (let i = 0; i < totalAnimals.length; i++)
@@ -161,10 +163,8 @@ function generateData(event)
       if (totalAnimals[i].Diet == "Herbivore")
       {
         filteredArray.push(totalAnimals[i]);
-        showCards(filteredArray);
       }
     }
-    filteredArray = [];
   } 
   else if (menu.value == '2') 
   {
@@ -173,10 +173,8 @@ function generateData(event)
       if (totalAnimals[i].Diet == "Carnivore")
       {
         filteredArray.push(totalAnimals[i]);
-        showCards(filteredArray);
       }
     }
-    filteredArray = [];
   } 
   else if (menu.value == '3') 
   {
@@ -185,10 +183,8 @@ function generateData(event)
       if (totalAnimals[i].Diet == "Omnivore")
       {
         filteredArray.push(totalAnimals[i]);
-        showCards(filteredArray);
       }
     }
-    filteredArray = [];
   }
   else if (menu.value == '4')
   {
@@ -197,11 +193,11 @@ function generateData(event)
       if (totalAnimals[i].Diet == "Insectivore")
       {
         filteredArray.push(totalAnimals[i]);
-        showCards(filteredArray);
       }
     }
-    filteredArray = [];
   }
+
+  showCards(filteredArray);
 
 }
 
