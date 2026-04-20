@@ -12,7 +12,6 @@
   font-style: normal;
 }
 
-html,
 body {
   margin: 0;
   padding: 0;
@@ -57,16 +56,23 @@ body {
   display: flex;
   flex-wrap: wrap;            /* KEY FIX: allows cards to wrap */
   justify-content: center;
-  gap: 15px;                  /* cleaner spacing than margins */
-  margin: 20px;
+  gap: 25px;                  /* cleaner spacing than margins */
+  margin: 40px;
 }
 
 .card {
   width: 300px;
-  max-width: 90vw;           /* prevents overflow on small screens */
-  border: 1px solid #ccc;
-  border-radius: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  background: var(--card-bg);
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
 .card-content {
@@ -88,12 +94,19 @@ body {
 }
 
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;   /* vertically aligns them */
-  gap: 10px;             /* space between items */
-  flex-wrap: wrap;       /* keeps it responsive */
+  position: sticky;
+  top: 0;
+
+  z-index: 1000; /* keeps it above cards */
+
+  background: white; /* important so content doesn't show through */
   padding: 10px;
+
+  text-align: center;
+}
+
+.footer select:hover {
+  transform: translateY(-2px) scale(1.03);
 }
 
 button {
