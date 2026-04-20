@@ -19,7 +19,7 @@ body {
   overflow-x: hidden; /* prevents horizontal scrolling */
   box-sizing: border-box;
   font-family: "Nirakolu", Verdana;
-  background-color: #f9fffb;
+  background-color: #fff9f970;
 }
 
 *, *::before, *::after {
@@ -27,7 +27,7 @@ body {
 }
 
 .main-header {
-  background-color: #1C3144;
+  background-color: #70161E;
   padding-bottom: 10px;
 }
 
@@ -91,7 +91,7 @@ body {
 
 button {
   text-align: center;
-  background-color: #70161E;
+  background-color: #1C3144;
   border: none;
 
   padding: 10px 16px;
@@ -157,7 +157,7 @@ button:hover {
 
   outline: none;
 
-  background-color: #70161E;
+  background-color: #1C3144;
 
   /* custom arrow */
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");

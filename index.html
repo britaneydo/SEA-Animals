@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>LA TV Shows | Home</title>
+    <title>Animal Catalog</title>
     <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -11,7 +11,7 @@
       <h1 class="title">ANIMALS</h1>
     </header>
     <div class="footer">
-  <select id="change_chart">
+  <select id="filter_chart">
     <option value="" disabled selected>Filter</option>
     <option value="1">Herbivores</option>
     <option value="2">Carnivores</option>
@@ -19,7 +19,14 @@
     <option value="4">Insectivores</option>
   </select>
 
-  <button onclick="alphabetSort()">Sort Alphabetically (Z -> A)</button>
+  <select id="sort_chart">
+    <option value="" disabled selected>Sort</option>
+    <option value="1">Weight</option>
+    <option value="2">Height</option>
+    <option value="3">Lifespan</option>
+  </select>
+
+  <button onclick="addCard()">Add A Card</button>
   <button onclick="removeLastCard()">Remove A Card</button>
 </div>
     <div id="card-container"></div>

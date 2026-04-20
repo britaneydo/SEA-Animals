@@ -35,6 +35,9 @@ https://www.w3schools.com/jsref/jsref_foreach.asp
 https://stackoverflow.com/questions/9329446/loop-for-each-over-an-array-in-javascript
 https://www.w3schools.com/howto/howto_js_dropdown.asp
 https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-with-drop-down-options
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
+https://www.w3schools.com/jsref/jsref_match.asp
+https://www.freecodecamp.org/news/javascript-regex-match-example-how-to-use-the-js-replace-method-on-a-string/
 
 
 */
@@ -112,19 +115,45 @@ function editCardContent(card, newTitle, newImageURL, Animalheight, Animalweight
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards(totalAnimals));
 
-function alphabetSort() {
-  console.log("Button Clicked!");
+var sort = document.getElementById("sort_chart");
+sort.addEventListener("change", Sort);
+
+function Sort(event) 
+{
+  if (sort.value == '1') 
+  {
+    filteredArray = bubbleSort(totalAnimals, "Weight (kg)")
+    showCards(filteredArray);
+  } 
+  else if (sort.value == '2') 
+  {
+    filteredArray = bubbleSort(totalAnimals, "Height (cm)")
+    showCards(filteredArray);
+  } 
+  else if (sort.value == '3') 
+  {
+    filteredArray = bubbleSort(totalAnimals, "Lifespan (years)")
+    showCards(filteredArray);
+  }
+
 }
 
-function removeLastCard() {
+function removeLastCard() 
+{
   totalAnimals.pop(); // Remove last item in totalAnimals array
   showCards(totalAnimals); // Call showCards again to refresh
 }
 
-var menu = document.getElementById("change_chart");
+function addCard()
+{
+
+}
+
+var menu = document.getElementById("filter_chart");
 menu.addEventListener("change", generateData);
 
-function generateData(event) {
+function generateData(event) 
+{
   if (menu.value == '1') 
   {
     for (let i = 0; i < totalAnimals.length; i++)
@@ -175,3 +204,42 @@ function generateData(event) {
   }
 
 }
+
+// turn weight into string
+function turnNum(anyString)
+{
+  let thisNum = anyString.match(/\d+/)
+
+  // if not a number, make weight 0 (first of list)
+  if (!thisNum)
+  {
+    return 0;
+  }
+
+  // return weight as an int
+  return Number(thisNum[0]);
+}
+
+// bubble sort for sorting animals by height/weight/lifespan
+function bubbleSort(arr, type)
+{
+  for (let i = 0; i < arr.length; i++)
+  {
+    for (let j = 0; j < arr.length-1; j++)
+    {
+      let temp1 = turnNum(arr[j][type]);
+      let temp2 = turnNum(arr[j+1][type]);
+
+      if (temp1 < temp2)
+      {
+        // swap places for sorting
+        let temp3 = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] = temp3;
+      }
+    }
+  }
+  return arr;
+}
+
+
