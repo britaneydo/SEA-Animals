@@ -28,20 +28,6 @@ const AnimalDataset = [
     "Social Structure": "Herd-based"
   },
   {
-    "Animal": "Alpine Ibex",
-    "Height (cm)": "67-101",
-    "Weight (kg)": "19-120",
-    "Color": "Brown",
-    "Lifespan (years)": "15-20",
-    "Diet": "Herbivore",
-    "Habitat": "Mountains, Alpine",
-    "Predators": "Wolves, Golden Eagles",
-    "Countries Found": "European Alps",
-    "Conservation Status": "Least Concern",
-    "Family": "Bovidae",
-    "Social Structure": "Group-based"
-  },
-  {
     "Animal": "American Bison",
     "Height (cm)": "152-186",
     "Weight (kg)": "318-1,000",
@@ -68,20 +54,6 @@ const AnimalDataset = [
     "Conservation Status": "Least Concern",
     "Family": "Myrmecophagidae",
     "Social Structure": "Solitary"
-  },
-  {
-    "Animal": "Arabian Horse",
-    "Height (cm)": "140-160",
-    "Weight (kg)": "380-1000",
-    "Color": "Various",
-    "Lifespan (years)": "25-30",
-    "Diet": "Herbivore",
-    "Habitat": "Middle East, North Africa",
-    "Predators": "Humans, Predators",
-    "Countries Found": "Middle East, North Africa",
-    "Conservation Status": "Not Applicable",
-    "Family": "Equidae",
-    "Social Structure": "Herd-based"
   },
   {
     "Animal": "Asian Elephant",
@@ -151,34 +123,6 @@ const AnimalDataset = [
     "Countries Found": "Worldwide",
     "Conservation Status": "Vulnerable",
     "Family": "Cetorhinidae",
-    "Social Structure": "Solitary"
-  },
-  {
-    "Animal": "Black Rhinoceros",
-    "Height (cm)": "132-180",
-    "Weight (kg)": "800-1,400",
-    "Color": "Gray, Black",
-    "Lifespan (years)": "35-50",
-    "Diet": "Herbivore",
-    "Habitat": "Grasslands, Forests",
-    "Predators": "Lions, Hyenas",
-    "Countries Found": "Eastern and Southern Africa",
-    "Conservation Status": "Critically Endangered",
-    "Family": "Rhinocerotidae",
-    "Social Structure": "Solitary"
-  },
-  {
-    "Animal": "Blobfish",
-    "Height (cm)": "Up to 30",
-    "Weight (kg)": "Up to 10",
-    "Color": "Pinkish-gray",
-    "Lifespan (years)": "Up to 100",
-    "Diet": "Carnivore",
-    "Habitat": "Deep-sea",
-    "Predators": "Not Applicable",
-    "Countries Found": "Australia, New Zealand, Tasmania",
-    "Conservation Status": "Vulnerable",
-    "Family": "Psychrolutidae",
     "Social Structure": "Solitary"
   },
   {
@@ -294,20 +238,6 @@ const AnimalDataset = [
     "Social Structure": "Social groups"
   },
   {
-    "Animal": "Chinese Giant Salamander",
-    "Height (cm)": "Up to 180",
-    "Weight (kg)": "Up to 65",
-    "Color": "Dark Brown",
-    "Lifespan (years)": "Up to 70",
-    "Diet": "Carnivore",
-    "Habitat": "Freshwater",
-    "Predators": "Fish, Crustaceans",
-    "Countries Found": "China",
-    "Conservation Status": "Critically Endangered",
-    "Family": "Cryptobranchidae",
-    "Social Structure": "Solitary"
-  },
-  {
     "Animal": "Coelacanth",
     "Height (cm)": "Up to 200",
     "Weight (kg)": "Up to 90",
@@ -334,20 +264,6 @@ const AnimalDataset = [
     "Conservation Status": "Least Concern",
     "Family": "Delphinidae",
     "Social Structure": "Group-based"
-  },
-  {
-    "Animal": "Common Snapping Turtle",
-    "Height (cm)": "20-36",
-    "Weight (kg)": "4.5-16",
-    "Color": "Brown, Gray",
-    "Lifespan (years)": "30-50",
-    "Diet": "Omnivore",
-    "Habitat": "Freshwater",
-    "Predators": "Birds, Raccoons",
-    "Countries Found": "North America",
-    "Conservation Status": "Least Concern",
-    "Family": "Chelydridae",
-    "Social Structure": "Solitary"
   },
   {
     "Animal": "Dugong",
@@ -406,20 +322,6 @@ const AnimalDataset = [
     "Social Structure": "Group-based"
   },
   {
-    "Animal": "Galapagos Penguin",
-    "Height (cm)": "49-53",
-    "Weight (kg)": "1.5-2.5",
-    "Color": "Black, White",
-    "Lifespan (years)": "Up to 15",
-    "Diet": "Carnivore",
-    "Habitat": "Coastal Areas",
-    "Predators": "Orcas, Sharks",
-    "Countries Found": "Galapagos Islands",
-    "Conservation Status": "Endangered",
-    "Family": "Spheniscidae",
-    "Social Structure": "Solitary"
-  },
-  {
     "Animal": "Galapagos Tortoise",
     "Height (cm)": "Up to 183",
     "Weight (kg)": "Up to 417",
@@ -473,20 +375,6 @@ const AnimalDataset = [
     "Countries Found": "China",
     "Conservation Status": "Endangered",
     "Family": "Ursidae",
-    "Social Structure": "Solitary"
-  },
-  {
-    "Animal": "Gila Monster",
-    "Height (cm)": "Up to 60",
-    "Weight (kg)": "Up to 2.3",
-    "Color": "Black, Orange",
-    "Lifespan (years)": "Up to 20",
-    "Diet": "Carnivore",
-    "Habitat": "Deserts, Scrubland",
-    "Predators": "Birds of Prey, Coyotes",
-    "Countries Found": "Southwestern United States, Mexico",
-    "Conservation Status": "Least Concern",
-    "Family": "Helodermatidae",
     "Social Structure": "Solitary"
   },
   {
@@ -572,20 +460,6 @@ const AnimalDataset = [
     "Conservation Status": "Data Deficient",
     "Family": "Myxinidae",
     "Social Structure": "Solitary"
-  },
-  {
-    "Animal": "Harp Seal",
-    "Height (cm)": "Up to 180",
-    "Weight (kg)": "Up to 160",
-    "Color": "Silver, Gray",
-    "Lifespan (years)": "20-35",
-    "Diet": "Carnivore",
-    "Habitat": "Arctic, Atlantic Ocean",
-    "Predators": "Polar Bears, Orcas",
-    "Countries Found": "Arctic, Atlantic Ocean",
-    "Conservation Status": "Least Concern",
-    "Family": "Phocidae",
-    "Social Structure": "Group-based"
   },
   {
     "Animal": "Harpy Eagle",

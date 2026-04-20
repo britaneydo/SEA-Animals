@@ -58,7 +58,7 @@ body {
   width: 300px;
   max-width: 90vw;           /* prevents overflow on small screens */
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 

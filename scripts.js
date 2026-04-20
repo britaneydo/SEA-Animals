@@ -79,16 +79,19 @@ function showCards(array)
     let color = array[i].Color;
     let lifespan = array[i]["Lifespan (years)"];
     let diet = array[i].Diet;
+    let habitat = array[i].Habitat
 
     // more formatting/styling
     const nextCard = templateCard.cloneNode(true); // Copy the template card
-    editCardContent(nextCard, name, image, height, weight, color, lifespan, diet); // Edit title and image
+    editCardContent(nextCard, name, image, height, weight, color, lifespan, diet, habitat); // Edit title and image
     cardContainer.appendChild(nextCard); // Add new card to the container
   }
 
 }
 
-function editCardContent(card, newTitle, newImageURL, Animalheight, Animalweight, Animalcolor, Animallifespan, AnimalDiet) {
+function editCardContent(card, newTitle, newImageURL, Animalheight, Animalweight, 
+  Animalcolor, Animallifespan, AnimalDiet, AnimalHabitat) 
+{
   card.style.display = "block";
 
   const cardHeader = card.querySelector("h2");
@@ -108,6 +111,8 @@ function editCardContent(card, newTitle, newImageURL, Animalheight, Animalweight
   cardLifespan.textContent = "Lifespan (Years): " + Animallifespan;
   const cardDiet = card.querySelector("li5");
   cardDiet.textContent = "Diet: " + AnimalDiet;
+  const cardHabitat = card.querySelector("li6");
+  cardHabitat.textContent = "Habitat: " + AnimalHabitat;
 
   console.log("new card:", newTitle, "- html: ", card);
 }
@@ -145,7 +150,18 @@ function removeLastCard()
 
 function addCard()
 {
+  if (ExtraAnimalDataset.length == 0)
+  {
+    alert("There are no more animals to add!");
+    return;
+  }
 
+  let index = ExtraAnimalDataset.length - 1;
+
+  totalAnimals.push(ExtraAnimalDataset[index]);
+  alert("Animal Added: " + ExtraAnimalDataset[index].Animal);
+  ExtraAnimalDataset.pop();
+  showCards(totalAnimals);
 }
 
 var menu = document.getElementById("filter_chart");
@@ -217,6 +233,8 @@ function turnNum(anyString)
 }
 
 // bubble sort for sorting animals by height/weight/lifespan
+// definitely not the fastest but will take up the least amt of space. Mergesort would be quicker
+// O(n^2)
 function bubbleSort(arr, type)
 {
   for (let i = 0; i < arr.length; i++)
