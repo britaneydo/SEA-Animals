@@ -53,11 +53,10 @@ let filteredArray = [];
 
 // all animal images
 var animalImages = {
-  Herbivore: "honda.png",
-  Carnivore: "carnivore.jpg",
-  Omnivore: "omnivore.jpg",
-  Insectivore: "insectivore.jpg",
-  Error: "error.jpg"
+  Herbivore: "./images/herbivore.png",
+  Carnivore: "./images/carnivore.png",
+  Omnivore: "./images/omnivore.png",
+  Insectivore: "./images/insectivore.png"
 };
 
 // show card of animal

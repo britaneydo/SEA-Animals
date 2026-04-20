@@ -1,10 +1,25 @@
+@font-face {
+  font-family: 'Nirakolu';
+  src: url('./fonts/Nirakolu.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url('./fonts/cocogoose/Cocogoose-Pro-Semilight-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* prevents horizontal scrolling */
   box-sizing: border-box;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Nirakolu", Verdana;
+  background-color: #f9fffb;
 }
 
 *, *::before, *::after {
@@ -12,7 +27,7 @@ body {
 }
 
 .main-header {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #1C3144;
   padding-bottom: 10px;
 }
 
@@ -20,7 +35,7 @@ body {
   text-align: center;
   margin: 0;
   font-size: 6em; /* slightly reduced to prevent overflow on small screens */
-  font-family: "Trebuchet MS";
+  font-family: "Nirakolu", Verdana;
   font-weight: normal;
   color: white;
 }
@@ -49,39 +64,56 @@ body {
 
 .card-content {
   padding: 20px;
-  font-family: "Verdana";
+  font-family: "Nirakolu", Verdana;
   color: #777;
 }
 
 .card-content h2 {
   margin-top: 0;
-  font-size: 20px;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.675);
 }
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 200px;
+  object-fit: contain;
 }
 
 .footer {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;           /* prevents overflow on small screens */
-  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;   /* vertically aligns them */
+  gap: 10px;             /* space between items */
+  flex-wrap: wrap;       /* keeps it responsive */
   padding: 10px;
 }
 
 button {
   text-align: center;
-  background-color: #666;
+  background-color: #70161E;
   border: none;
-  padding: 0 10px;
+
+  padding: 10px 16px;
   height: 40px;
-  border-radius: 10px;
+
+  border-radius: 20px;
   color: white;
-  font-size: 22px;
+
+  font-size: 15px;
   cursor: pointer;
+
   margin: 5px;
+
+  font-family: "Cocogoose", Verdana;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
 }
 
 .card-content ul {
@@ -97,6 +129,7 @@ button {
 .card-content li5 {
   display: block;      /* forces new line */
   margin-bottom: 6px;  /* spacing between fields */
+  font-size: 15px;
 }
 
 .dropdown {
@@ -105,7 +138,7 @@ button {
   margin: 15px 0;
 }
 
-.dropdown select {
+.footer select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -113,8 +146,7 @@ button {
   color: white;
 
   padding: 10px 40px 10px 16px;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: "Cocogoose", Verdana;
 
   border: none;
   border-radius: 20px;
@@ -125,11 +157,14 @@ button {
 
   outline: none;
 
-  background: grey;
+  background-color: #70161E;
 
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, right 12px center;
-  background-size: cover, 18px;
+  /* custom arrow */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
 }
 
 .dropdown select:hover {

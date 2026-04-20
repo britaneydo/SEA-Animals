@@ -8,21 +8,20 @@
 
   <body>
     <header class="main-header">
-      <h1 class="title">Animals</h1>
+      <h1 class="title">ANIMALS</h1>
     </header>
-    <div class="dropdown">
-      <select id="change_chart">
-        <option value="" disabled selected>Filter</option>
-        <option value="1">Herbivores</option>
-        <option value="2">Carnivores</option>
-        <option value="3">Omnivores</option>
-        <option value="4">Insectivores</option>
-      </select>
-    </div>
     <div class="footer">
-      <button onclick="alphabetSort()">Sort Alphabetically</button>
-      <button onclick="removeLastCard()">Remove A Card</button>
-    </div>
+  <select id="change_chart">
+    <option value="" disabled selected>Filter</option>
+    <option value="1">Herbivores</option>
+    <option value="2">Carnivores</option>
+    <option value="3">Omnivores</option>
+    <option value="4">Insectivores</option>
+  </select>
+
+  <button onclick="alphabetSort()">Sort Alphabetically (Z -> A)</button>
+  <button onclick="removeLastCard()">Remove A Card</button>
+</div>
     <div id="card-container"></div>
     <div class="card" style="display: none">
       <div class="card-content">
