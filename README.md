@@ -8,6 +8,10 @@ Displays all your favorite animals with additional info! Sort, Filter, Delete, a
 
 This project displays knowledge with arrays, as well as with objects in programming. A sorting function is used as well, however not optimally (yet).
 
+Every image was hand drawn by me.
+
+Visit the site here:  https://britaneydo.github.io/SEA-Animals/
+
 Sources used: https://docs.google.com/document/d/1khqJt6D8VN6Z6q4vtcXS6RLppqAzXkddt3U-b1vRoGc/edit?usp=sharing
 
 Created by:
