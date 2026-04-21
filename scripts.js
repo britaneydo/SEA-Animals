@@ -16,8 +16,9 @@ https://www.w3schools.com/howto/howto_js_dropdown.asp
 https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-with-drop-down-options
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
 https://www.w3schools.com/jsref/jsref_match.asp
+https://stackoverflow.com/questions/61739935/why-does-sorting-copied-array-sorts-original-array?
 https://www.freecodecamp.org/news/javascript-regex-match-example-how-to-use-the-js-replace-method-on-a-string/
-https://stackoverflow.com/questions/61739935/why-does-sorting-copied-array-sorts-original-array?utm_source=chatgpt.com
+https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 
 */
 
@@ -108,6 +109,7 @@ document.addEventListener("DOMContentLoaded", showCards(totalAnimals));
 
 // for sorting
 // https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-with-drop-down-options
+// event listener; checks for change in sort dropdown, then calls the sort function when change is seen
 var sort = document.getElementById("sort_chart");
 sort.addEventListener("change", Sort);
 
@@ -138,7 +140,7 @@ function removeLastCard()
   showCards(totalAnimals); // Call showCards again to refresh
 }
 
-// adds card to end of array, calls showCards to display all animals
+// adds card to end of array by pushing, calls showCards to display all animals
 function addCard()
 {
   // error handling
@@ -157,14 +159,16 @@ function addCard()
 }
 
 // for filtering
+// another event listener; checks for change in filter dropdown then calls filter function when detected
 var menu = document.getElementById("filter_chart");
-menu.addEventListener("change", generateData);
+menu.addEventListener("change", filter);
 
-function generateData(event) 
+function filter(event) 
 {
 
   filteredArray = [];
 
+  // depending on animal diet, push animal into a new array which will then be displayed onto cards
   if (menu.value == '1') 
   {
     for (let i = 0; i < totalAnimals.length; i++)
@@ -206,6 +210,7 @@ function generateData(event)
     }
   }
 
+  // refresh cards
   showCards(filteredArray);
 
 }
@@ -252,7 +257,8 @@ function bubbleSort(arr, type)
 
 // this is for styling
 // allows for bg change from light to dark
-function toggleDarkMode() {
+function toggleDarkMode() 
+{
   document.body.classList.toggle("dark-mode");
 }
 
