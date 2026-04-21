@@ -250,6 +250,11 @@ function bubbleSort(arr, type)
   return arr;
 }
 
+// this is for styling
+// allows for bg change from light to dark
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
 
 
 

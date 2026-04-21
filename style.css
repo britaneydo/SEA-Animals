@@ -15,10 +15,21 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* prevents horizontal scrolling */
+  overflow-x: hidden;
   box-sizing: border-box;
+
   font-family: "Nirakolu", Verdana;
-  background-color: #fff9f970;
+
+  background-image: url('./images/bgLIGHT.png'); /* your image */
+  background-size: cover;       /* fills screen */
+  background-position: center;  /* keeps it centered */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* optional: nice subtle effect */
+}
+
+body.dark-mode {
+  background-image: url('./images/bgDARK.png'); /* your night image */
+  color: white;
 }
 
 *, *::before, *::after {
@@ -99,7 +110,6 @@ body {
 
   z-index: 1000; /* keeps it above cards */
 
-  background: white; /* important so content doesn't show through */
   padding: 10px;
 
   text-align: center;
@@ -196,18 +206,18 @@ button:hover {
 }
 
 .card.herbivore {
-  background-color: #7ea16b90;
+  background-color: #7ea16b;
 }
 
 .card.carnivore {
-  background-color: #70161d78;
+  background-color: #9a3b43;
 }
 
 .card.omnivore {
-  background-color: #1c314484;
+  background-color: #5981a4;
 }
 
 .card.insectivore {
-  background-color: #596f629b;
+  background-color: #596f62;
 }
 
